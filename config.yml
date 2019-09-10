@@ -1,0 +1,15 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+  - name: WhitespaceTokenizer
+  - name: CRFEntityExtractor
+  - name: EntitySynonymMapper
+  - name: EmbeddingIntentClassifier
+  
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: FallbackPolicy
+  - name: MemoizationPolicy
+  - name: FormPolicy
+  - name: MappingPolicy
