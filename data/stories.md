@@ -27,8 +27,6 @@
   - utter_goodbye
 
 ## ask happy path
-* greet
-  - utter_greet
 * request_name
   - name_form
   - form{"name": "name_form"}
